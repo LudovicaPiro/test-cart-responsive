@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Set-jetters United</title>
+		
+		<!-- metatags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="Set-jetters United">
+		<meta name="description" content="Short description of max 150 characters.">
+		<meta name="keywords" content="physical internet, data visualization, internet infrastructure">
+		
+		<!-- Open Graph / Facebook metatags -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://densitydesign.github.io/teaching-dd15/course-results/es03/group04/">
+		<meta property="og:title" content="Set-jetters United">
+		<meta property="og:description" content="Short description of max 150 characters.">
+		<meta property="og:image" content="https://i.ibb.co/vhBWYwb/Physical-Internet-CORRETTA.jpg">
+		
+		<!-- Twitter metatags -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://densitydesign.github.io/teaching-dd15/course-results/es03/group04/">
+		<meta property="twitter:title" content="Set-jetters United">
+		<meta property="twitter:description" content="Short description of max 150 characters.">
+		<meta property="twitter:image" content="https://i.ibb.co/vhBWYwb/Physical-Internet-CORRETTA.jpg">
+		
+		<!-- link to Bootstrap css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		
+		<!--Link to css files-->
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+				
+		<!-- link to fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+		
+		<!-- link to Favicon -->
+		
+	</head>
+	
+	<body>	
+		<!--start Header Area-->
+		<header class="nav-bar nav-bar-transition" id="nav-content">
+			<nav class="container-fluid">
+				<div class="margin-fifty">
+					<div class="row">
+						<a class="col-xl-2" href="index.html">
+							<img id="set-jetters-logo" src="assets/images/Logo_w.png" alt="Set-jetters United logo"/>
+						</a>
+			
+						<div class="offset-xl-5 col-xl-5">
+							<div class="row">
+								<a href="behindthescene.html" class="bar-menu offset-xl-4 col-xl-5">BEHIND THE SCENE
+								</a>
+								<a href="javascript:void(0)" class="bar-menu col-xl-3 cartbtn" onclick="openNav()">CART
+									<img id="icon-backpack" src="assets/images/icon-backpack.png" alt="Icon backpack"/>
+								</a>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<!--CART POP-UP-->
+		<div id="mySidenav" class="sidenav">				
+			<div class="container-fluid">				  
+				<div class="cartcontent" id="cartcontent-cart">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<h3>CART</h3>
+								
+					<div class="row cartelement">
+						<div class="col-xl-4">
+							<img class="img-fluid" src="assets/images/cartsquare.png" alt="Image not supported"/>
+						</div>
+						<div class="col-xl-6">
+							<h5>PIZZA IS ON THE HOUSE <br> Breaking Bad</h5>
+							<div class="adress" style="display: flex;">
+								<i class="fas fa-map-marker-alt" style="padding-right: 10px; padding-top: 3px;"></i>
+								<p>3828 Piermont Dr, Albuquerque, New Mexico 87112 USA</p>
+							</div>
+						</div>
+						<div class="col-xl-2">
+							<h5>25,99€</h5>
+						</div>
+					</div>
+							
+					<div class="row cartelement">
+						<div class="col-xl-4">
+							<img class="img-fluid" src="assets/images/cartsquare.png" alt="Image not supported"/>
+						</div>
+						<div class="col-xl-6">
+							<h5>PIZZA IS ON THE HOUSE <br> Breaking Bad</h5>
+							<div class="adress" style="display: flex;">
+								<i class="fas fa-map-marker-alt" style="padding-right: 10px; padding-top: 3px;"></i>
+								<p >3828 Piermont Dr, Albuquerque,
+New Mexico 87112 USA</p>
+							</div>
+						</div>
+						<div class="col-xl-2">
+							<h5>25,99€</h5>
+						</div>
+					</div>									
+					<a class="purchasebtn" href="javascript:void(0)" >PURCHASE</a>								
+				</div>
+			</div>
+		</div>
+		<!--onclick="closeNav(); openMoral()"-->
+		<!--MORAL POP-UP-->
+		<div id="mySidemoral" class="sidemoral">				
+			<div class="container-fluid">				  
+				<div class="cartcontent cartcontent-moral">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeMoral()">&times;</a>
+					<h3 class="margincards">MORALIST PAGE</h3>
+
+					<div class="moraltext">
+						<h4>We’d like to take the merit for coming up with this great activities, but actually they are all true! </h4> 
+									
+						<p>Somebody really threw pizza on the Walter White House and some other fan really took dirt from Burkittsville cemetery. Fans from all over the world love to visit their favourite film or TV series locations, but for the sake of the fandom, they can also become ruthless and disregard common sense. Everybody has the right to enjoy and visit these locations, so don’t be a toxic fan, respect the places and the people.
+						</p>
+										
+						<div style="margin-top: 100px;">
+							<p style="text-align: center;">Find out more about the project:</p>
+							<a href="behindthescene.html" class="moralbtn">BEHIND THE SCENE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- start Section Area-->	
+		<main id="main-content">
+			
+			<!--Coverpage-->
+			<section id="coverpage" class="container-fluid">
+				
+				<!--Fullscreen video-->
+				<img id="coverVideo" src="assets/images/BehindTheScenes.jpg">
+				<article class="cover margin-hundred">
+					
+					<!--Main title and subtitle-->
+					<div class="row">
+						<p id="main-title" class=" col-xl-12">BEHIND THE SCENES</p>
+					</div>
+					<div class="row">
+						<p id="main-subtitle" class="col-xl-12">THE ULTIMATE BREAK <br>OF THE FOURTH WALL </p>
+					</div>
+				</article>
+			</section>
+			
+			<!--Category selection-->
+			<section id="CategoryContainer" class="container-fluid">		
+				<article class="categorySelection margin-hundred">
+					
+					<!--Section title-->
+					<div class="row">
+						<p class="section-title col-xl-12">CHOOSE YOUR WAY OF TRAVELLING:</p>
+					</div>
+				
+					<!--Categories buttons-->
+					<div class="row">
+
+						<div class="col-xl-3">
+							
+								<div class="categoryDiv">
+									<a href="category01/category01.html" class="categoryLinks">
+									<p class="categoryBt whiteHover" id="MAKE">
+										MAKE YOUR PRESENCE<br>STAND OUT
+									</p>
+									</a>
+								</div>
+								
+							<div class="categoryDescr dropdown">
+								<p class="dropdownTxt">Don’t be a wallflower. Make your experience<br>a memorable one</p>
+							</div>
+						</div>
+						
+
+						
+						<div class="col-xl-3">
+							<div class="categoryDiv">
+								<a href="category01/category01.html" class="categoryLinks">
+									<p class="categoryBt whiteHover" id="LEAVE">
+										LEAVE YOUR MARK ON<br>THE WORLD
+									</p>
+								</a>
+							</div>
+							<div class="categoryDescr dropdown">
+								<p class="dropdownTxt">Activities for when looking at nature is<br>just not enough</p>
+							</div>
+						</div>
+						
+						<div class="col-xl-3">
+							<div class="categoryDiv">
+								<a href="category01/category01.html" class="categoryLinks">
+									<p class="categoryBt whiteHover" id="SWIM">
+										SWIM AGAINST THE TIDE<br><br>
+									</p>
+								</a>
+							</div>
+							<div class="categoryDescr dropdown">
+								<p class="dropdownTxt">Break free from the boring routine and follow your instincts</p>
+							</div>
+						</div>
+						
+						<div class="col-xl-3">
+							<div class="categoryDiv">
+								<a href="category01/category01.html" class="categoryLinks">
+									<p class="categoryBt whiteHover" id="FEEL">
+										FEEL THE ADRENALINE FLOWING
+									</p>
+								</a>
+							</div>
+							<div class="categoryDescr dropdown">
+								<p class="dropdownTxt">For the most reckless ones who love risk<br>and feel no fear</p>
+							</div>
+						</div>				
+					</div>
+				</article>
+			</section>
+			
+			<!--Principles + Most loved tours-->
+			<section class="whiteBack container-fluid">
+				
+				<!--Principles-->
+				<article class="principles margin-hundred">
+					
+					<!--Section title-->
+					<div class="row">
+						<p class="section-title col-xl-12">WHY CHOOSE SET-JETTERS UNITED?</p>
+					</div>
+					
+					<div class="row">					
+						<!--Principle #1-->
+						<div class="single-principle col-xl-4">
+							<div class="row">
+								<figure class="col-xl-11">
+									<img class="icon-principle" src="assets/images/icon-world.png" alt="Image not supported"/>
+								</figure>
+							</div>
+							<div class="row">
+								<p class="principle-text col-xl-10">With our unique experiences you’ll finally be able to stop sitting on your couch and live the adventures of your most beloved characters, now as the protagonist in your favourite movies or TV series’ worlds.</p>
+							</div>
+						</div>
+						
+						<!--Principle #2-->
+						<div class="single-principle col-xl-4">
+							<div class="row">
+								<figure class="offset-xl-1 col-xl-11">
+									<img class="icon-principle" src="assets/images/icon-guide.png" alt="Image not supported"/>
+								</figure>
+							</div>
+							<div class="row">
+								<p class="principle-text offset-xl-1 col-xl-10">Our team includes passionate and experienced set-jetters stanning movies and TV series hard as you do. They will guide you and share with you the excitement of the moment even under arrest.</p>
+							</div>
+						</div>
+						
+						<!--Principle #3-->
+						<div class="single-principle col-xl-4">
+							<div class="row">
+								<figure class="offset-xl-2 col-xl-10">
+									<img class="icon-principle" src="assets/images/icon-map.png" alt="Image not supported"/>
+								</figure>
+							</div>
+							<div class="row">
+								<p class="principle-text offset-xl-2 col-xl-10">Our outstanding tour catalog includes a very specific variety of destination to suit all cinematic tastes and passions. Even if you are dying to see Tuvalu crumbling public baths, we got you covered.</p>
+							</div>
+						</div>
+					</div>
+				</article>	
+			
+				<!--Most loved tours-->				
+				<article class="mostLoved margin-hundred">
+					
+					<!--Section title-->
+					<div class="row">
+						<p class="section-title col-xl-12" style="color: #000000;">OUR MOST LOVED TOURS</p>
+					</div>
+					
+					<!--Card #1-->
+					<div class="row top4">
+						<a href="category01/category01.html" class="col-md-4 col-xl-3 activitiycard">
+			  				<div class="img-hover-zoom">
+								<img class="img-fluid" src="assets/images/cards/01-harrypotter1.jpg" alt="Card image cap">
+								<div class="textabove">
+									<p style="display: inline">London</p>
+									<p class="post"> <i class="fab fa-instagram pr-2" ></i>188.923</p>
+									<h5>BEST DO IT AT<br>A BIT OF A RUN</h5>
+									<p style="display: inline">Harry Potter</p>
+									<p class="price">110,99 €</p>
+								</div>
+							</div>
+        				</a>
+						
+						<!--Card #2-->
+      					<a href="" class="col-md-4 col-xl-3 activitiycard">
+							<div class="img-hover-zoom">
+								<img class="img-fluid" src="assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+								<div class="textabove">
+									<p style="display: inline">New York</p>
+									<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+									<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+									<p style="display: inline">When Harry Met Sally</p>
+									<p class="price">20,99 €</p>
+								</div>
+							</div>
+        				</a>
+
+						<!--Card #3-->
+      					<a href="" class="col-md-4 col-xl-3 activitiycard">
+			  				<div class="img-hover-zoom">
+								<img class="img-fluid" src="assets/images/cards/01-joker.jpg" alt="Image not supported">
+								<div class="textabove">
+									<p style="display: inline">New York</p>
+									<p class="post"> <i class="fab fa-instagram pr-2" ></i>6.541</p>
+									<h5>GOT THE MOVES LIKE JOKER?</h5>
+									<p style="display: inline">Joker</p>
+									<p class="price">100,99 €</p>
+								</div>
+							</div>
+        				</a>
+		
+						<!--Card #4-->
+		  				<a href="" class="col-md-4 col-xl-3 activitiycard">
+			  				<div class="img-hover-zoom">
+								<img class="img-fluid" src="assets/images/cards/01-got1.jpg" alt="Image not supported">
+								<div class="textabove">
+									<p style="display: inline">Dubrovnik</p>
+									<p class="post"> <i class="fab fa-instagram pr-2" ></i>3.925</p>
+									<h5>HEAR ME ROAR! <br><br></h5>
+									<p style="display: inline">Game of Thrones</p>
+									<p class="price">29,99 €</p>
+								</div>
+							</div>
+        				</a>
+					</div>				   				
+				</article>
+			</section>	
+		</main>
+		
+		<!--start Footer Area-->
+		<footer id="footer">		
+			<div class="container-fluid">
+				<div class="margin-fifty">
+					<div class="row">
+						<!--Juicy infos about us-->
+						<div class="about col-xl-3">
+							<h6>JUICY INFOS ABOUT US</h6>
+							<p>Set-jetters United is the one and only travel agency where you’ll find the most unique movie and TV series related activities. All of them are selected with the utmost care and love to provide you the very best experience ever.</p>
+						</div>
+					
+						<!--Contact-->
+						<div class="contact offset-xl-1 col-xl-3">
+							<h6>CONTACT</h6>
+							<p>Drop us a line at <a href="" id="info-email">info@setjettersunited.com</a></p>
+							<div class="social-icon">
+								<a href=""><img src="assets/images/icon-fb.png" alt="Icon fb" id="icon-fb"/></a>
+								<a href=""><img src="assets/images/icon-twitter.png" alt="Icon Twitter" id="icon-twitter"/></a>
+								<a href=""><img src="assets/images/icon-ig.png" alt="Icon ig" id="icon-ig"/></a>
+							</div>
+						</div>
+					
+						<!--Keep up to date-->
+						<div class="newsletter col-xl-5">
+							<h6>KEEP UP TO DATE</h6>
+							<form>
+								<input type="text" id="enter-email" value="Enter your email here..." name="email">
+								<input type="submit" id="subscribe" value="SUBSCRIBE" name="subscribe">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- links to Javascript files -->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+		<!-- link to FontAwesome -->
+    	<script src="https://kit.fontawesome.com/fe7d3f2655.js" crossorigin="anonymous"></script>
+		
+	</body>
+</html>

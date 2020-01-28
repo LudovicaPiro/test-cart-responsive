@@ -1,0 +1,790 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*HOMEPAGE PHONE-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+	
+	.margin-fifty {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.margin-hundred {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	/*barra navigazione*/
+	.bar-menu {
+		margin-top: 0rem;
+		padding-right: 0.2rem;
+		font-size: 14px;
+	}
+	
+	#set-jetters-logo {
+	width: 100px;
+}
+	
+	.textbar {
+		display: none;
+	}
+	
+	#icon-backpack {
+		padding-right: 10px;
+	}
+	
+	
+	
+	
+	/*cover video*/
+	.cover {
+		padding-top: 11rem;
+	}
+	
+	#main-title {
+		font-size: 50px;
+		line-height: 4rem;
+	}
+
+	#main-subtitle {
+		font-size: 28px;
+	}
+	
+	/*category*/
+	.section-title {
+		font-size: 24px;
+	}
+	
+	#CategoryContainer {
+		padding-top: 100px;
+		height: auto;
+		padding-bottom: 100px;
+	}
+	
+	.categoryBt {
+		font-size: 35px;
+		font-weight: 400;
+		width: 100%;
+		height: 170px;
+		/*margin-top: 2rem;*/
+		line-height: 45px;
+		color: #fff;
+		border: none;
+		padding: 15px 15px 15px 15px;
+	}
+	
+	.makeimg {
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category01small.jpg');
+	}
+	
+	.leaveimg {
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category02small.jpg');
+	}
+	
+	.swimimg {
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category03small.jpg');
+	}
+	
+	.feelimg{
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category04small.jpg');
+	}
+	
+	.categoryDiv{
+		margin-top: 2rem;
+		width: 100%;
+		position: relative;
+		color: #fff;
+		border: none;
+	}
+	
+	.categoryDescr {	
+		display: none;
+		width: 100%;
+		margin-top: 0rem;
+		
+	}	
+	
+	.dropdownTxt {
+		font-size: 15px;
+		opacity: 1;
+		display: none;
+		
+	}
+	
+	/*principles*/
+	.principle-text {
+		margin-top: 0rem;
+		font-size: 15px;
+		line-height: 22px;
+	}
+	
+	.icon-principle {
+		height: 60px;
+	}
+	
+	.single-principle {
+		margin-top: 3rem;
+	}
+	
+	/*most loved tours*/
+	.activitiycard {
+		margin-bottom: 30px;
+	}
+	
+	/*footer*/
+	.about {
+		margin-bottom: 2rem;
+	}
+	
+	.contact {
+		margin-bottom: 3rem;
+	}
+	
+	.newsletter {
+		margin-bottom: 0rem;
+	}
+	
+	#subscribe {
+		margin-left: 0rem;
+		margin-top: 0.5rem;
+	}
+	
+}
+
+/*HOMEPAGE TABLET----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+	
+	.margin-hundred {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	
+	.margin-fifty {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	
+	/*barra navigazione*/
+	#set-jetters-logo {
+		width: 100px;
+	}
+	
+	/*cover video*/
+	.cover {
+		padding-top: 45%;
+	}
+	
+	#main-title {
+		font-size: 80px;
+		line-height: 6rem;
+	}
+
+	#main-subtitle {
+		font-size: 45px;
+	}
+	
+	/*category*/
+	#CategoryContainer {
+		padding-top: 130px;
+		padding-bottom: 150px;
+		height: auto;
+	}
+	
+	.categoryBt {
+		font-size: 35px;
+		font-weight: 400;
+		width: 100%;
+		height: 250px;
+		/*margin-top: 2rem;*/
+		line-height: 45px;
+		color: #fff;
+		border: none;
+		padding: 25px 25px 25px 25px;
+	}
+	
+	.makeimg {
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category01small.jpg');
+	}
+	
+	.leaveimg {
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category02small.jpg');
+	}
+	
+	.swimimg {
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category03small.jpg');
+	}
+	
+	.feelimg{
+		background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
+		url('../assets/images/category04small.jpg');
+	}
+	
+	.categoryDiv{
+		margin-top: 2rem;
+		width: 100%;
+		position: relative;
+		color: #fff;
+		border: none;
+	}
+	
+	.categoryDescr {	
+		display: none;
+		width: 100%;
+		margin-top: 0rem;
+		
+	}
+	
+	/*most loved tours*/
+	.activitiycard {
+		margin-bottom: 30px;
+	}
+	
+	/*footer*/
+	#subscribe {
+		margin-left: 0rem;
+		margin-top: 0.5rem;
+	}	
+}
+
+
+/*HOMEPAGE RISERVA MEGLIO NON USARE SE POSSILE-----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+	
+	/*footer*/
+	.newsletter {
+		margin-top: 1rem;
+	}
+}
+
+
+
+/*CATEGORY PAGE PHONE-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+	
+	/*left-side*/
+	.category-title {
+		font-size: 45px;
+		line-height: 3.5rem;
+	}
+	
+	.category-text {	
+		font-size: 16px;
+	}
+	
+	.category-choose a {
+		font-size: 16px;
+	}
+	
+	
+	/*cards*/
+	.margincards {
+		margin-bottom: 0px;
+	}
+
+	.category-cards {
+		margin-top: 5rem;
+	}
+
+}
+
+
+/*CATEGORY TABLET----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	/*left-side*/
+	.category-title {
+		font-size: 45px;
+		line-height: 3.5rem;
+	}
+	
+	.category-text {	
+		font-size: 16px;
+	}
+	
+	.category-choose a {
+		font-size: 14px;
+	}
+	
+	.margincards {
+		margin-bottom: 0px;
+	}
+	
+}
+
+/*CART PROJECTOR*/
+
+@media (min-width: 576px)and (max-width: 1281px){
+	.address-cart{font-size: smaller;}
+	.detail-margin {margin-top:10px; }
+}
+/* CART IPAD*/
+
+/*SINGLE TOUR PAGE PHONE-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+
+    /*Text description*/
+    #tot-price {
+        display: inline-block;
+        float: none;
+        margin-top: 2rem;
+    }
+    
+    .btn-detail {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    
+        /*Add to cart btn*/
+        .addcart-btn {
+            margin-top: 2rem;
+            margin-left: 0px;
+        }
+    
+        /*Calendar*/
+        .dropdown-content-calendar {
+            width: 330px;
+        }
+    
+        .weekdays li {
+            width: 12.5%;
+            font-size: 20px;
+        }
+    
+        .days li {
+            width: 12.5%;
+        }
+    
+    
+    /*Images*/
+    .tour-cards {
+        margin-top: 3rem;
+    }
+    
+    .margincards-singletour {
+        margin-bottom: 2rem;
+    }
+    
+    .category-all {
+        margin-bottom: 5rem; /*5rem = 80px*/
+    }
+    
+    
+    /*Reviews*/
+    #reviews {
+        margin-bottom: 5rem; /*5rem = 80px*/
+    }
+    
+    .marginbottom-review {
+        margin-bottom: 2rem;
+    }
+    
+    
+    /*Carousel*/
+    .carousel {
+        margin-bottom: 70px;
+    }
+    
+}
+
+
+/*SINGLE TOUR PAGE TABLET-----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    /*Reviews*/
+    .marginbottom-review {
+        margin-bottom: 2rem;
+    }
+    
+    
+    /*Carousel*/
+    .carousel {
+        margin-bottom: 50px;
+    }
+    
+    .freccia {
+        margin-top: 450px;
+    }
+    
+    
+    /*Calendar*/
+    .dropdown-content-calendar {
+        width: 330px;
+    }
+
+    .weekdays li {
+        width: 12.5%;
+        font-size: 20px;
+    }
+    
+    .days li {
+        width: 12.5%;
+    }   
+    
+}
+
+/*ABOUT PHONE-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+
+	.about-margin{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.fixed {
+		position: relative;
+	}
+
+	.about-margin-top{
+		margin-top: 2.5rem;
+	}
+
+	.titleabout {
+	  margin-top: 0rem;
+	  font-size: 20px;
+	  line-height: 23px;
+	  font-weight: 600;
+	}
+
+	.textabout {
+	 margin-top: 0rem;
+ 	 font-size: 15px;
+ 	 line-height: 22px;
+	 font-weight: 400;
+	}
+
+		.carousel-margin-about{
+			margin-left: 0px; 
+			margin-right: 0px; 
+			margin-top: 50px;}
+
+
+		.row-arrow-about {
+		position:absolute;
+		top:89.5%;
+		left:86.6%;
+		}
+	
+	.centeredtextabout {
+  	position: absolute;
+  	top: 60%;
+  	left: 40%;
+  	transform: translate(-50%, -50%);
+}
+	
+	.centeredtextabout2 {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+	
+	
+.centeredtextabout3 {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+	
+	
+	.textabout {
+	margin-top: 0rem;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+	
+	
+.textabout2 {
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: 700;
+	text-align: right;
+}
+
+	
+}
+
+
+
+/*OLD ABOUT FOOTER----------------------------------------------------------------------------*/
+/* Media Queries */
+
+	/* Mobile */
+	@media (max-width: 576px){
+
+		/*general*/
+		.mobile-padding {
+			padding-left: 0.3rem;
+			padding-right: 0.3rem;
+		}
+
+
+		/*Header Area*/
+		#group-number{
+			display: none;
+		}
+
+
+		/*Sections Area*/
+		.intro {
+			margin-top: 14rem;
+		}
+
+		.main-title {
+			font-size: 35px;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+
+		.group-names {
+			font-size: 18px;
+		}
+
+		.text-introduction {
+			font-size: 18px;
+		}
+
+		.mobile-fontsize {
+			font-size: 15px;
+		}
+
+		figcaption {
+			font-size: 14px;
+		}
+
+		.mobile-figure {
+			margin-bottom: 2rem;
+		}
+
+		.btn-download {
+			margin-bottom: 2rem;
+		}
+
+		#image-3, #image-4, #image-5 {
+			padding-top: 0rem;
+		}
+
+
+		/*Footer Area*/
+		.logo-images {
+
+			padding-left:  0.3rem;
+			margin-right:  0.3rem;
+			margin-left:  0.3rem;
+			margin-bottom: 1rem;
+		}
+
+		#logodensity {
+			/* width: 70px; */
+			margin-left:  0.3rem;
+			margin-right: 3.1rem;
+		}
+
+		#logopoli {
+			/* width: 170px; */
+		}
+
+		.lists {
+			margin-bottom: 3rem;
+			/* margin-right:  0.2rem;
+			margin-left:  0.2rem; */
+		}
+
+		.list-students {
+			margin-bottom: 1rem;
+			padding-left:  1rem;
+			padding-right:  0rem;
+			/* margin-right:  0.2rem; */
+			/* margin-left:  0.3rem; */
+		}
+		.list-faculty {
+			margin-bottom: 1rem;
+			padding-left:  0.3rem;
+			padding-right:  0.3rem;
+			/* margin-right:  0.2rem;
+			margin-left:  0.2rem; */
+		}
+		.list-assistants {
+			margin-bottom: 1rem;
+			padding-left:  1rem;
+			padding-right:  1rem;
+
+			/* margin-right:  0.3rem; */
+			/* margin-left:  0.2rem; */
+		}
+
+
+		ul {
+			list-style: none;
+			font-size: 15px;
+
+			/* margin-right:  0.2rem;
+			margin-left:  0.2rem;
+			margin-bottom: 1rem; */
+		}
+		.ul-b{
+			font-weight: 800;
+		}
+
+
+	}
+
+
+
+
+	/*ms dimentions IPAD*/
+	@media (min-width: 577px) and (max-width: 768px){
+
+		/*Header Area*/
+		#group-number{
+			display: none;
+		}
+
+
+		/*Sections Area*/
+		.intro {
+			margin-top: 14rem;
+		}
+
+		.main-title {
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+
+		.mobile-figure {
+			margin-bottom: 2rem;
+		}
+	}
+
+
+	/*md dimentions PC*/
+	@media (min-width: 769px) and (max-width: 992px){
+
+		/*Sections Area*/
+		.intro {
+			margin-top: 14rem;
+		}
+
+		.main-title {
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+
+		.mobile-figure {
+		margin-bottom: 2rem;
+		}
+	}
+
+
+
+/*ABOUT PAGE TABLET----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+	
+	
+	
+		.about-margin{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.fixed {
+		position: relative;
+	}
+
+	.about-margin-top{
+		margin-top: 2.5rem;
+	}
+
+	.titleabout {
+	  margin-top: 0rem;
+		font-size: 26px;
+	  line-height: 36px;
+	  font-weight: 600;
+	}
+
+	.textabout {
+	 margin-top: 0rem;
+ 	 font-size: 15px;
+ 	 line-height: 22px;
+	 font-weight: 400;
+	}
+
+		.carousel-margin-about{
+			margin-left: 0px; 
+			margin-right: 0px; 
+			margin-top: 50px;}
+
+
+		.row-arrow-about {
+		position:absolute;
+		top:89.5%;
+		left:86.6%;
+		}
+	
+	.centeredtextabout {
+  	position: absolute;
+  	top: 60%;
+  	left: 40%;
+  	transform: translate(-50%, -50%);
+}
+	
+	.centeredtextabout2 {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+	
+	
+.centeredtextabout3 {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+	
+		.textabout {
+	margin-top: 0rem;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 400;
+}
+	
+	ul {
+	list-style: none;
+	font-size: 20px;
+	padding-left: 0rem;
+	margin-right: 0rem;
+	margin-left: 0rem;
+}
+.ul-b{
+	font-weight: 800;
+}
+
+	
+}
+
+
+
+
+
+
+
