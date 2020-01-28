@@ -327,12 +327,94 @@
 }
 
 /*CART PROJECTOR*/
-
-@media (min-width: 576px)and (max-width: 1281px){
+@media (min-width: 1025px)and (max-width: 1280px){
 	.address-cart{font-size: smaller;}
-	.detail-margin {margin-top:10px; }
+	.detail-margin {margin-top:2.5%; }
 }
-/* CART IPAD*/
+/* CART IPAD PRO*/
+@media (min-width: 769)(max-width: 1024px){
+	.detail-margin {margin-top:16.5%; }	
+	 }
+
+/*MORALIST PAGE PHONE-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+	
+	.cartcontent {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	.sidemoral h4 {
+		font-size: 20px;
+	}
+	
+	
+	/*The X btn*/
+	a.closebtn {
+		padding-left: 30px;
+	}
+	
+	
+	/*Behind the scene btn*/
+	a.moralbtn {
+		margin-right: 5%;
+		margin-left: 5%;	
+	}
+
+	a.moralbtn:hover {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+}
+
+
+
+/*MORALIST PAGE TABLET----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+	
+	.cartcontent {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	
+	
+	/*The X btn*/
+	a.closebtn {
+		padding-left: 40px;
+	}
+	
+	
+	/*Behind the scene btn*/
+	a.moralbtn {
+		margin-right: 15%;
+		margin-left: 15%;	
+	}
+
+	a.moralbtn:hover {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+}
+
+
+
+/*MORAL TABLET IPAD-----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+	
+	/*Behind the scene btn*/
+	a.moralbtn {
+		margin-right: 30%;
+		margin-left: 30%;	
+	}
+
+	a.moralbtn:hover {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	
+}
 
 /*SINGLE TOUR PAGE PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
