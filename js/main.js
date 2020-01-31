@@ -13,8 +13,9 @@ $(window).scroll(
 //variables
 //!!!!!!!!!!!!!!!!!!----------------!!!!!!!!!!!!!!!----------------!!!!!!!!!!!!!!!!!!!
 //!!!!!!!!!------this list has to be completed with all the page names------!!!!!!!!!!!!!!!
-        var listTour = ["01-pizza", "01-show"];
-        var listMorals =["01-pizza", "01-show"];
+        var listTour = ["01-gohaunt","01-pizza","01-hear", "01-bestdo", "01-gotmoves", "01-show", "01-door", "01-knock", "01-godyes", "02-driveyourcart", "02-getwith", "02-wire", "02-stand", "02-onthehunt", "02-thebeach", "03-strip", "03-yoga", "03-getwith", "03-climb", "03-youcan", "03-getsouvenirs", "03-godyes", "04-feelfree", "04-reachtheufo","04-anything", "04-everybody", "04-climb"];
+        
+        var listMorals =["01-gohaunt", "01-pizza", "01-hear", "01-bestdo", "01-gotmoves", "01-show", "01-door", "01-knock", "01-godyes", "02-driveyourcart", "02-getwith", "02-wire", "02-stand", "02-onthehunt", "02-thebeach", "03-strip", "03-yoga", "03-getwith", "03-climb", "03-youcan", "03-getsouvenirs", "03-godyes", "04-feelfree", "04-reachtheufo", "04-anything", "04-everybody", "04-climb"];
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         var pageName;
 
@@ -126,6 +127,8 @@ $(document).ready(function(){
                                       
                                      //open moralist page
                                          if (windWidth<=898) {$("#mySidemoral").css("width", "100%");} 
+                                         else if(windWidth>898 && windWidth<=1024) {$("#mySidemoral").css("width", "75%");}
+                                         else if(windWidth>1024 && windWidth<=1280) {$("#mySidemoral").css("width", "60%");}
                                          else {$("#mySidemoral").css("width", "50%");}
                                          $(".cartcontent-moral").delay(500).fadeIn(500,"linear" );                                         
                                     }
@@ -208,7 +211,14 @@ $(document).ready(function(){
         //Calendar btn---------------------------------------------------------
                 $(".dropbtn-calendar").click(
                         function() {
-                                     $(".dropdown-content-calendar").toggle();   
+                                     $(".dropdown-content-calendar").toggle();
+                                     $(this).toggleClass("noBottom");   
+                        }
+                );
+                $(" .dropbtn-calendar-cart").click(
+                        function() {
+                                     $(this).siblings(".dropdown-content-calendar-cart").toggle();
+                                     $(this).toggleClass("noBottom");                                       
                         }
                 );
 
@@ -216,6 +226,13 @@ $(document).ready(function(){
                 $(".dropbtn").click(
                         function() {
                                         $(".dropdown-content").toggle();
+                                        $(this).toggleClass("noBottom");
+                        }
+                );
+                $(".dropbtn-cart").click(
+                        function() {
+                                        $(this).siblings(".dropdown-content-cart").toggle();
+                                        $(this).toggleClass("noBottom");
                         }
                 );
         //about--------------------------------------------//
@@ -259,7 +276,70 @@ $(document).ready(function(){
                             }
                 );
         
+    
+    //Audio
+    $("#buttonAudio").click(function(){
+        toggleMute();
+    });
+    
+    
+    //about--------------------------------------------
+
+        $("#makeyourpresence").hover(
+                      function(){ $(this).css("opacity", "0");
+                            $("#makeyourpresence_hover").css("opacity", "1");
+                            },
+                      function(){ $(this).css("opacity", "1");
+                            $("#makeyourpresence_hover").css("opacity", "0");
+                            }
+                     );
+
+        // ----------------------
+        $(" #feeltheadrenalina").hover(
+                      function(){ $(this).css("opacity", "0");
+                            $("#feeltheadrenalina_hover").css("opacity", "1");
+                            },
+                      function(){ $(this).css("opacity", "1");
+                            $("#feeltheadrenalina_hover").css("opacity", "0");
+                            }
+                     );
+
+        // ----------------------
+        $(" #swimagainst").hover(
+                      function(){ $(this).css("opacity", "0");
+                            $("#swimagainst_hover").css("opacity", "1");
+                            },
+                      function(){ $(this).css("opacity", "1");
+                            $("#swimagainst_hover").css("opacity", "0");
+                            }
+                     );
+
+        // ----------------------
+        $(" #leaveyourmark").hover(
+                      function(){ $(this).css("opacity", "0");
+                            $("#leaveyourmark_hover").css("opacity", "1");
+                            },
+                      function(){ $(this).css("opacity", "1");
+                            $("#leaveyourmark_hover").css("opacity", "0");
+                            }
+                     );
+    
 });
+
+
+//Audio button//
+function toggleMute() {
+    
+    var video=document.getElementById("coverVideo")
+    if(video.muted){video.muted = false;
+                    $('#buttonAudio').attr('src', "assets/images/icon-mutono.png");
+                   }
+    else {	video.muted = true;
+          $('#buttonAudio').attr('src', "assets/images/icon-mutoyes.png");
+         }
+    console.log("ok!");
+}
+
 
 
 //Reviews//
@@ -271,8 +351,9 @@ $(".show-more a").on("click", function() {
     if(linkText === "SHOW MORE"){
         linkText = "show less";
         $content.switchClass("hideContent", "showContent", 400);
-                
-    } else {
+    }
+    
+    else {
         linkText = "show more";
         $content.switchClass("showContent", "hideContent", 400);
     };
@@ -284,47 +365,62 @@ $(".show-more a").on("click", function() {
   var windWidth = $(window).width();
 
 function closeNav() {
-  $("#mySidenav").css("width", "0");
-  $("#main-content, #footer, #nav-content").css("opacity", "1");
-  $("body").css("background-color", "black");
-  $("#cartcontent-cart").fadeOut(100, "linear");
+    $("#mySidenav").css("width", "0");
+    $("#main-content, #footer, #nav-content").css("opacity", "1");
+    $("body").css("background-color", "black");
+    $("#cartcontent-cart").fadeOut(100, "linear");
 
 }
 
 function closeMoral() {
-  $("#mySidemoral").css("width", "0");
-  $("#main-content, #footer, #nav-content").css("opacity", "1");
-  $("body").css("background-color", "black");
-  $(".cartcontent-moral").fadeOut(100, "linear");
+    $("#mySidemoral").css("width", "0");
+    $("#main-content, #footer, #nav-content").css("opacity", "1");
+    $("body").css("background-color", "black");
+    $(".cartcontent-moral").fadeOut(100, "linear");
 }
 
 function openNav() { 
-  if (windWidth<=898) {$("#mySidenav").css("width", "100%");} 
-  else {$("#mySidenav").css("width", "50%");}  
-  $("#main-content, #footer, #nav-content").css("opacity", "0.2");
-  $("body").css("background-color", "rgb(0,0,0,0.8)");
+    if (windWidth<=898) {$("#mySidenav").css("width", "100%");}
+    else if(windWidth>898 && windWidth<=1024) {$("#mySidenav").css("width", "75%");}
+    else if(windWidth>1024 && windWidth<=1280) {$("#mySidenav").css("width", "60%");} 
+    else {$("#mySidenav").css("width", "50%");}  
+    $("#main-content, #footer, #nav-content").css("opacity", "0.2");
+    $("body").css("background-color", "rgb(0,0,0,0.8)");
 }
+
+
 
 //Menu category//
 function showMake() {
-         $("#makebtn").css("display", "inline-block");  
-         $("#leavebtn, #swimbtn, #feelbtn").css("display", "none"); 
-        
+    $("#makebtn").css("display", "inline-block");  
+    $("#leavebtn, #swimbtn, #feelbtn").css("display", "none");      
 };
 
 function showLeave() { 
-         $("#leavebtn").css("display", "inline-block"); 
-         $("#makebtn, #swimbtn, #feelbtn").css("display", "none");
+    $("#leavebtn").css("display", "inline-block"); 
+    $("#makebtn, #swimbtn, #feelbtn").css("display", "none");
 };
 
 function showSwim() {
-         $("#swimbtn").css("display", "inline-block");  
-         $("#leavebtn, #makebtn, #feelbtn").css("display", "none");
+    $("#swimbtn").css("display", "inline-block");  
+    $("#leavebtn, #makebtn, #feelbtn").css("display", "none");
 };
 
 function showFeel() {
-         $("#feelbtn").css("display", "inline-block");  
-         $("#leavebtn, #swimbtn, #makebtn").css("display", "none");
+    $("#feelbtn").css("display", "inline-block");  
+    $("#leavebtn, #swimbtn, #makebtn").css("display", "none");
 };
+
+
+
+//LOADER
+
+var loader = document.getElementById("loader");
+
+window.setTimeout(function(){
+    loader.style.height="500px";
+    loader.style.width="500px";
+    loader.style.visibility ="hidden";
+}, 1700);
 
 

@@ -1,6 +1,234 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/*VIDEO TOUR X TUTTO-------------------------------------------------------------------------------*/
+@media (min-width: 300px) and (max-width: 3840px){
+    
+    .videotourresponsive {
+        width: 100%; 
+    }    
+}
+
+
+
+/*CART PROJECTOR-------------------------------------------------------------------------------*/
+@media (min-width: 1025px)and (max-width: 1280px){
+
+    .address-cart {
+		font-size: smaller;
+    }
+    
+	.dropdown-content-calendar-cart {
+		width: 110%;    	
+    }
+    
+    a.purchasebtn {
+    	margin-top:30px; 	
+    }
+
+}
+
+
+
+/* CART IPAD PRO-------------------------------------------------------------------------------*/
+@media (min-width: 768px)and (max-width: 1024px){
+    
+	a.purchasebtn {
+    	margin-top:30px;  	
+    }
+    
+    .dropdown-content-calendar-cart {
+        margin-left:  4.2%;
+    }
+   
+}
+
+
+
+/* CART PHONE-------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+    
+	.cartelement{
+        padding-bottom: 70px;
+    }
+    
+	.crop-img-top {
+		object-fit: cover;
+    	object-position: 50% 15%;
+    	height: 120px;
+    	width: 100%;
+	}
+    
+	.crop-img-mid {
+		object-fit: cover;
+    	object-position: 50% 55%;
+    	height: 120px;
+    	width: 100%;
+	}
+    
+	.crop-img-bottom {
+		object-fit: cover;
+    	object-position: 50% 85%;
+    	height: 120px;
+    	width: 100%;
+	}
+
+	.crop-img-div {
+		height: 120px;
+		overflow: hidden;
+	}
+    
+	.title-cart-el {
+		margin-top: 20px;
+	}
+    
+	.address-cart {
+		font-size: smaller;
+    }
+    
+	.btn-detail-cart {
+		padding-right: 0px;
+	}	
+    
+	.detail-margin {
+		margin-top: 0px;
+    }
+    
+	.price {
+		font-size: medium;
+		padding-left: 0px;
+    }
+    
+	.dropbtn-calendar-cart {
+		height: 100%
+    }
+    
+	.dropbtn-cart {
+		height: fit-content;
+		width: fit-content;		
+	}
+    
+	.dropdown-content-cart{
+		width: 53%;
+		margin-bottom: 20px;
+	}
+    
+	.dropdown-content-calendar-cart {
+    	width: 121%;
+    	margin-left: 6.4%;
+    	margin-bottom: 20px;
+        font-size: initial;
+	}
+
+	.quantity-label {
+        margin-left: 7px;
+    }
+    
+	.Qty {
+        font-size: medium!important;
+	}
+    
+	a.purchasebtn {
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 20px;
+		margin-bottom: 84%;
+	}
+    
+	a.purchasebtn:hover {
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 20px;
+		margin-bottom: 84%;
+	}
+}
+
+
+
+/*MORALIST PAGE PHONE-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+	
+	.cartcontent {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	.sidemoral h4 {
+		font-size: 20px;
+	}
+	
+	
+	/*The X btn*/
+	a.closebtn {
+		padding-left: 30px;
+	}
+	
+	
+	/*Behind the scene btn*/
+	a.moralbtn {
+		margin-right: 5%;
+		margin-left: 5%;	
+	}
+
+	a.moralbtn:hover {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+}
+
+
+
+/*MORALIST PAGE TABLET----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+	
+	.cartcontent {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 25px;
+	}
+	
+	
+	/*The X btn*/
+	a.closebtn {
+		padding-left: 40px;
+	}
+	
+	
+	/*Behind the scene btn*/
+	a.moralbtn {
+		margin-right: 15%;
+		margin-left: 15%;	
+	}
+
+	a.moralbtn:hover {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+}
+
+
+
+/*MORALIST PAGE TABLET IPAD-----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+	
+	/*Behind the scene btn*/
+	a.moralbtn {
+		margin-right: 30%;
+		margin-left: 30%;	
+	}
+
+	a.moralbtn:hover {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	
+}
+
+
+
 /*HOMEPAGE PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
 	
@@ -33,9 +261,7 @@
 		padding-right: 10px;
 	}
 	
-	
-	
-	
+		
 	/*cover video*/
 	.cover {
 		padding-top: 11rem;
@@ -49,6 +275,7 @@
 	#main-subtitle {
 		font-size: 28px;
 	}
+	
 	
 	/*category*/
 	.section-title {
@@ -119,6 +346,7 @@
 		
 	}
 	
+	
 	/*principles*/
 	.principle-text {
 		margin-top: 0rem;
@@ -134,10 +362,12 @@
 		margin-top: 3rem;
 	}
 	
+	
 	/*most loved tours*/
 	.activitiycard {
 		margin-bottom: 30px;
 	}
+	
 	
 	/*footer*/
 	.about {
@@ -159,6 +389,8 @@
 	
 }
 
+
+
 /*HOMEPAGE TABLET----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px){
 	
@@ -172,10 +404,12 @@
 		margin-right: 25px;
 	}
 	
+	
 	/*barra navigazione*/
 	#set-jetters-logo {
 		width: 100px;
 	}
+	
 	
 	/*cover video*/
 	.cover {
@@ -190,6 +424,7 @@
 	#main-subtitle {
 		font-size: 45px;
 	}
+	
 	
 	/*category*/
 	#CategoryContainer {
@@ -249,26 +484,77 @@
 		
 	}
 	
+	
 	/*most loved tours*/
 	.activitiycard {
 		margin-bottom: 30px;
 	}
 	
+	
 	/*footer*/
 	#subscribe {
 		margin-left: 0rem;
 		margin-top: 0.5rem;
-	}	
+	}
 }
 
 
-/*HOMEPAGE RISERVA MEGLIO NON USARE SE POSSILE-----------------------------------------------*/
+
+/*HOMEPAGE TABLET IPAD-----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 992px){
 	
 	/*footer*/
 	.newsletter {
 		margin-top: 1rem;
 	}
+}
+
+
+
+/*VIDEO HOME PAGE PHONE----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+    
+	.margin-botton-audio {
+        /* margin-top: 190px; */
+        margin-top: 56%;
+        padding-right: 0%;
+    }
+}
+
+
+
+/*VIDEO HOME PAGE TABLET----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+    
+	.margin-botton-audio {
+        /* margin-top: 190px; */
+        margin-top: 58%;
+        padding-right: 0%;
+    }
+}
+
+
+
+/*VIDEO HOME PAGE TABLET IPAD----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+    
+	.margin-botton-audio {
+        /* margin-top: 190px; */
+        margin-top: 38%;
+        padding-right: 0%;
+    }
+}
+
+
+
+/*VIDEO HOME PAGE PROIETTORE----------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+    
+	.margin-botton-audio {
+        /* margin-top: 190px; */
+        margin-top: 20%;
+        padding-right: 0%;
+    }
 }
 
 
@@ -303,6 +589,7 @@
 }
 
 
+
 /*CATEGORY TABLET----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
 	
@@ -326,104 +613,56 @@
 	
 }
 
-/*CART PROJECTOR*/
-@media (min-width: 1025px)and (max-width: 1280px){
-	.address-cart{font-size: smaller;}
-	.detail-margin {margin-top:2.5%; }
-}
-/* CART IPAD PRO*/
-@media (min-width: 769)(max-width: 1024px){
-	.detail-margin {margin-top:16.5%; }	
-	 }
 
-/*MORALIST PAGE PHONE-----------------------------------------------------------------------------*/
-@media (max-width: 576px) {
-	
-	.cartcontent {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	
-	.sidemoral h4 {
-		font-size: 20px;
-	}
-	
-	
-	/*The X btn*/
-	a.closebtn {
-		padding-left: 30px;
-	}
-	
-	
-	/*Behind the scene btn*/
-	a.moralbtn {
-		margin-right: 5%;
-		margin-left: 5%;	
-	}
 
-	a.moralbtn:hover {
-		margin-left: 5%;
-		margin-right: 5%;
+/*CATEGORY PROIETTORE----------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+	
+    p.price{
+		float: left;
+		display: block;
+		text-align: right;	
+		padding-right: 0px;
+		margin-bottom: 0px;
+		font-weight: 500;
+	}
+	
+	
+	.serietitle {
+		display: block;
+		margin-bottom: 7px;
+	}
+	
+	h5 {
+		font-size: 17px;
 	}
 	
 }
 
 
-
-/*MORALIST PAGE TABLET----------------------------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 1024px){
-	
-	.cartcontent {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-	
-	
-	/*The X btn*/
-	a.closebtn {
-		padding-left: 40px;
-	}
-	
-	
-	/*Behind the scene btn*/
-	a.moralbtn {
-		margin-right: 15%;
-		margin-left: 15%;	
-	}
-
-	a.moralbtn:hover {
-		margin-left: 15%;
-		margin-right: 15%;
-	}
-	
-}
-
-
-
-/*MORAL TABLET IPAD-----------------------------------------------*/
-@media (min-width: 768px) and (max-width: 992px){
-	
-	/*Behind the scene btn*/
-	a.moralbtn {
-		margin-right: 30%;
-		margin-left: 30%;	
-	}
-
-	a.moralbtn:hover {
-		margin-left: 30%;
-		margin-right: 30%;
-	}
-	
-}
 
 /*SINGLE TOUR PAGE PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
+    
+    /*Change category btn*/
+    .menucategory {
+        padding: 3px 7px;
+    }
+    
+    .currentcategory {
+        padding: 3px 7px;
+    }
+    
+    p:hover .extra {
+        display: none;
+    }
+    
 
     /*Text description*/
     #tot-price {
-        display: inline-block;
+        display: block;
         float: none;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
     
     .btn-detail {
@@ -431,13 +670,19 @@
         margin-top: 1rem;
     }
     
+    
         /*Add to cart btn*/
         .addcart-btn {
             margin-top: 2rem;
             margin-left: 0px;
         }
     
+    
         /*Calendar*/
+        .dropbtn-calendar {
+            width: 155px;
+        }
+    
         .dropdown-content-calendar {
             width: 330px;
         }
@@ -449,6 +694,16 @@
     
         .days li {
             width: 12.5%;
+        }
+    
+    
+        /*Tour quantity*/
+        .dropbtn {
+            width: 60px;
+        }
+
+        .dropdown-content {
+            width: 60px;
         }
     
     
@@ -474,6 +729,10 @@
     .marginbottom-review {
         margin-bottom: 2rem;
     }
+	
+	.hideContent {
+        height: 17.4em;   /* 20.4em*/ /* 18.9em*/
+    }
     
     
     /*Carousel*/
@@ -481,27 +740,35 @@
         margin-bottom: 70px;
     }
     
+    .carousel-margin-phone {
+        margin-top: 2rem;
+        margin-right: 30px;
+        margin-left: 30px;      
+    }
+    
+    .hide-text-cards p, i {
+        display: none !important;
+    }
+    
+    .freccia {
+        margin-top: 0.5rem;
+        width: 15px;
+    }
+    
+    .hidden-arrow-desktop {
+        display: block;
+    }
+    
+    .hidden-arrow-mobile {
+        display: none;
+    }
+    
 }
+
 
 
 /*SINGLE TOUR PAGE TABLET-----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px){
-    
-    /*Reviews*/
-    .marginbottom-review {
-        margin-bottom: 2rem;
-    }
-    
-    
-    /*Carousel*/
-    .carousel {
-        margin-bottom: 50px;
-    }
-    
-    .freccia {
-        margin-top: 450px;
-    }
-    
     
     /*Calendar*/
     .dropdown-content-calendar {
@@ -515,12 +782,75 @@
     
     .days li {
         width: 12.5%;
-    }   
+    } 
+    
+    
+    /*Add to cart btn*/
+    .addcart-btn {
+        margin-left: 46px;
+    }
+    
+    
+    /*Reviews*/    
+    .hideContent {
+        height: 17.2em;   /* 20.4em*/ /* 18.9em*/
+    }
+      
+    
+    /*Carousel*/
+    .carousel {
+        margin-bottom: 50px;
+    }
+    
+    .freccia {
+        margin-top: 120px;
+    }
+}
+
+
+
+/*SINGLE TOUR PAGE TABLET IPAD-----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+	
+	/*Carousel*/
+     .freccia {
+         margin-top: 430px;
+    }
+    
+    
+    /*Reviews*/
+    .marginbottom-review {
+        margin-bottom: 2rem;
+    }
     
 }
 
+
+
+/*SINGLE TOUR PAGE PROIETTORE----------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+	
+	/*Reviews*/
+	.hideContent {
+        height: 17.2em;   /* 20.4em*/ /* 18.9em*/
+    }
+}
+
+
+
 /*ABOUT PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
+
+	.margin-fifty {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.margin-hundred {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
 
 	.about-margin{
 		margin-left: 10px;
@@ -546,244 +876,189 @@
 	 margin-top: 0rem;
  	 font-size: 15px;
  	 line-height: 22px;
-	 font-weight: 400;
+	 font-weight: 300;
 	}
+    
+    .carousel-margin-about {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
 
-		.carousel-margin-about{
-			margin-left: 0px; 
-			margin-right: 0px; 
-			margin-top: 50px;}
-
-
-		.row-arrow-about {
+    .row-arrow-about {
 		position:absolute;
-		top:89.5%;
-		left:86.6%;
-		}
-	
-	.centeredtextabout {
-  	position: absolute;
-  	top: 60%;
-  	left: 40%;
-  	transform: translate(-50%, -50%);
-}
-	
-	.centeredtextabout2 {
-  position: absolute;
-  top: 90%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-}
-	
-	
-.centeredtextabout3 {
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-	
-	
-	.textabout {
-	margin-top: 0rem;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-	
-	
-.textabout2 {
-	font-size: 22px;
-	line-height: 25px;
-	font-weight: 700;
-	text-align: right;
-}
+		/* top:89.5%;
+		left:86.6%; */
+		top:86.5%;
+		left:80.8%;
+    }
 
-	
+	.centeredtextabout {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+	.centeredtextabout2 {
+        position: absolute;
+        top: 80%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .centeredtextabout3 {
+        position: absolute;
+        top: 80%;
+        left: 39%;
+        transform: translate(-50%, -50%);
+    }
+
+
+	.textabout {
+        margin-top: 0rem;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+
+    .textabout2 {
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .textabout3 {
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    #image-about {
+        /* width: 500px; */
+        height: auto;
+        /* margin-right: 1.25rem; */
+        opacity: 1;
+        padding-bottom: 8%;
+    }
+
+    .descriptionabout {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        text-align: right;
+    }
+
+    .descriptionabout-margin {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+
+    .about-distance-protocol{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
 }
 
 
 
 /*OLD ABOUT FOOTER----------------------------------------------------------------------------*/
-/* Media Queries */
 
-	/* Mobile */
-	@media (max-width: 576px){
+/* Mobile */
+@media (max-width: 576px){
 
-		/*general*/
-		.mobile-padding {
-			padding-left: 0.3rem;
-			padding-right: 0.3rem;
-		}
+    /*general*/
+    .mobile-padding {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        padding-top: 3rem;
+    }
 
+    /*Footer Area*/
+    .logo-images {
+        padding-left:  0.3rem;
+        margin-right:  0.3rem;
+        margin-left:  0.3rem;
+        margin-bottom: 1rem;
+    }
 
-		/*Header Area*/
-		#group-number{
-			display: none;
-		}
+    #logodensity {
+        /* width: 70px; */
+        margin-left:  0.3rem;
+        margin-right: 3.1rem;
+        margin-top:0rem;
+    }
 
+    #logopoli {
+        /* width: 170px; */
+        margin-top:0rem;
+    }
 
-		/*Sections Area*/
-		.intro {
-			margin-top: 14rem;
-		}
+    .lists {
+        margin-bottom: 3rem;
+        /* margin-right:  0.2rem;
+        margin-left:  0.2rem; */
+    }
 
-		.main-title {
-			font-size: 35px;
-			font-weight: 700;
-			margin-bottom: 2rem;
-		}
+    .list-students {
+        margin-bottom: 1rem;
+        padding-left:  1rem;
+        padding-right:  0rem;
+        /* margin-right:  0.2rem; */
+        /* margin-left:  0.3rem; */
+    }
+    
+    .list-faculty {
+        margin-bottom: 1rem;
+        padding-left:  0.3rem;
+        padding-right:  0.3rem;
+        /* margin-right:  0.2rem;
+        margin-left:  0.2rem; */
+    }
+    
+    .list-assistants {
+        margin-bottom: 1rem;
+        padding-left:  1rem;
+        padding-right:  1rem;
+        /* margin-right:  0.3rem; */
+        /* margin-left:  0.2rem; */
+    }
 
-		.group-names {
-			font-size: 18px;
-		}
+    ul {
+        list-style: none;
+        font-size: 15px;
+        /* margin-right:  0.2rem;
+        margin-left:  0.2rem;
+        margin-bottom: 1rem; */
+    }
+    
+    .ul-b{
+        font-weight: 800;
+    }
 
-		.text-introduction {
-			font-size: 18px;
-		}
-
-		.mobile-fontsize {
-			font-size: 15px;
-		}
-
-		figcaption {
-			font-size: 14px;
-		}
-
-		.mobile-figure {
-			margin-bottom: 2rem;
-		}
-
-		.btn-download {
-			margin-bottom: 2rem;
-		}
-
-		#image-3, #image-4, #image-5 {
-			padding-top: 0rem;
-		}
-
-
-		/*Footer Area*/
-		.logo-images {
-
-			padding-left:  0.3rem;
-			margin-right:  0.3rem;
-			margin-left:  0.3rem;
-			margin-bottom: 1rem;
-		}
-
-		#logodensity {
-			/* width: 70px; */
-			margin-left:  0.3rem;
-			margin-right: 3.1rem;
-		}
-
-		#logopoli {
-			/* width: 170px; */
-		}
-
-		.lists {
-			margin-bottom: 3rem;
-			/* margin-right:  0.2rem;
-			margin-left:  0.2rem; */
-		}
-
-		.list-students {
-			margin-bottom: 1rem;
-			padding-left:  1rem;
-			padding-right:  0rem;
-			/* margin-right:  0.2rem; */
-			/* margin-left:  0.3rem; */
-		}
-		.list-faculty {
-			margin-bottom: 1rem;
-			padding-left:  0.3rem;
-			padding-right:  0.3rem;
-			/* margin-right:  0.2rem;
-			margin-left:  0.2rem; */
-		}
-		.list-assistants {
-			margin-bottom: 1rem;
-			padding-left:  1rem;
-			padding-right:  1rem;
-
-			/* margin-right:  0.3rem; */
-			/* margin-left:  0.2rem; */
-		}
-
-
-		ul {
-			list-style: none;
-			font-size: 15px;
-
-			/* margin-right:  0.2rem;
-			margin-left:  0.2rem;
-			margin-bottom: 1rem; */
-		}
-		.ul-b{
-			font-weight: 800;
-		}
-
-
-	}
+}
 
 
 
-
-	/*ms dimentions IPAD*/
-	@media (min-width: 577px) and (max-width: 768px){
-
-		/*Header Area*/
-		#group-number{
-			display: none;
-		}
-
-
-		/*Sections Area*/
-		.intro {
-			margin-top: 14rem;
-		}
-
-		.main-title {
-			font-size: 40px;
-			font-weight: 700;
-			margin-bottom: 2rem;
-		}
-
-		.mobile-figure {
-			margin-bottom: 2rem;
-		}
-	}
-
-
-	/*md dimentions PC*/
-	@media (min-width: 769px) and (max-width: 992px){
-
-		/*Sections Area*/
-		.intro {
-			margin-top: 14rem;
-		}
-
-		.main-title {
-			font-size: 40px;
-			font-weight: 700;
-			margin-bottom: 2rem;
-		}
-
-		.mobile-figure {
-		margin-bottom: 2rem;
-		}
-	}
-
-
-
-/*ABOUT PAGE TABLET----------------------------------------------------------------------------*/
+/*ABOUT TABLET-----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px){
-	
-	
-	
-		.about-margin{
-		margin-left: 10px;
+    
+    .margin-fifty {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .about-margin{
+        margin-left: 10px;
 		margin-right: 10px;
 	}
 
@@ -806,63 +1081,649 @@
 	 margin-top: 0rem;
  	 font-size: 15px;
  	 line-height: 22px;
-	 font-weight: 400;
+	 font-weight: 300;
 	}
 
-		.carousel-margin-about{
-			margin-left: 0px; 
-			margin-right: 0px; 
-			margin-top: 50px;}
-
-
-		.row-arrow-about {
-		position:absolute;
-		top:89.5%;
-		left:86.6%;
-		}
-	
+    .carousel-margin-about{
+        margin-left: 50px;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+    
+	.row-arrow-about {
+        position:absolute;
+        top:92.5%;
+        left:85.5%;
+	}
+    
 	.centeredtextabout {
-  	position: absolute;
-  	top: 60%;
-  	left: 40%;
-  	transform: translate(-50%, -50%);
-}
-	
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
 	.centeredtextabout2 {
-  position: absolute;
-  top: 90%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-}
-	
-	
-.centeredtextabout3 {
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-	
-		.textabout {
-	margin-top: 0rem;
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: 400;
-}
-	
+        position: absolute;
+        top: 80%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .centeredtextabout3 {
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+	.textabout {
+        margin-top: 0rem;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 300;
+    }
+
 	ul {
-	list-style: none;
-	font-size: 20px;
-	padding-left: 0rem;
-	margin-right: 0rem;
-	margin-left: 0rem;
-}
-.ul-b{
-	font-weight: 800;
+	   list-style: none;
+	   font-size: 20px;
+	   padding-left: 0rem;
+	   margin-right: 0rem;
+	   margin-left: 0rem;
+    }
+    
+    .ul-b{
+        font-weight: 800;
+    }
+
+    #image-about {
+        /* width: 500px; */
+        height: 375px;
+        /* margin-right: 1.25rem; */
+        opacity: 1;
+        padding-bottom: 10%;
+    }
+
+    .about-distance-protocol{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .descriptionabout {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 300;
+        /* text-align: right; */
+    }
+    
+    .textabout-margin-subtitle {
+        margin-top: 50px;
+    }
 }
 
-	
+
+
+/*ABOUT PAGE TABLET IPAD-----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+
+    .carousel-margin-about{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+
+    .row-arrow-about {
+        position:absolute;
+        top:92.5%;
+        left:91.5%;
+    }
+
+	#image-about {
+        /* width: 500px; */
+        height: auto;
+        /* margin-right: 1.25rem; */
+        opacity: 1;
+		padding-bottom: 10%;
+	}
+
+	.centeredtextabout2 {
+	   position: absolute;
+	   top: 80%;
+	   left: 25%;
+	   transform: translate(-50%, -50%);
+    }
+
+    .centeredtextabout3 {
+	   position: absolute;
+	   top: 80%;
+	   left: 30%;
+	   transform: translate(-50%, -50%);
+    }
 }
+
+
+
+/*ABOUT PROIETTORE-----------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1400px){
+    
+    .row-arrow-about {
+        position: absolute;
+        top: 92.5%;
+        left: 82.4%;
+	}
+
+	.margin-bottom-about{
+		margin-left: 0px;
+		margin-right: 60px;
+		margin-top: 50px;
+		margin-bottom: 114px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+
+
+/*MEGA SCHERMO HOME----------------------------------------------------------------------------*/
+@media (min-width: 3500px) {
+    
+ /*barra navigazione*/ 
+    #loader {
+        width: 3840px;
+        height: 2700px;
+        background: none repeat scroll 0 0 #000;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 9999; 
+    }
+    
+    .margin-fifty {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	
+	.margin-hundred {
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+    
+    .nav-bar {
+        padding-top: 55px;
+        height: 200px;
+    }
+    
+    #set-jetters-logo {
+	   width: 250px;
+    }
+    
+   #icon-behindscene {
+        height: 80px;
+        margin-left: 3rem;
+    } 
+    
+    #icon-backpack {
+        height: 80px;
+        margin-left: 3rem;
+    } 
+    
+    .bar-menu {
+	margin-top: 0.5rem;
+	font-size: 40px;
+	font-weight: 500;
+}
+    
+/*cover video*/ 
+    #main-title {
+		font-size: 200px;
+		font-weight: 800;
+		line-height: 15rem;
+	}
+
+	#main-subtitle {
+		font-size: 100px;
+		font-weight: 800;
+		color: #F39200;
+	}
+    
+    .cover {
+		padding-top: 47rem;
+	}
+    
+/*category section*/ 
+    #CategoryContainer {
+        margin-top: 0px;
+        padding-top: 600px;
+    }
+    
+    .section-title {
+		font-size: 80px;
+		font-weight: 600;
+        margin-bottom: 150px;
+	}
+    
+    .categoryBt {
+		font-size: 70px;
+		font-weight: 500;
+		width: 700px;
+		/*margin-top: 2rem;*/
+		margin-bottom: 0rem;
+		padding: 30px 50px 30px 50px;
+		line-height: 100px;
+		color: #F39200;
+		border: 5px solid #F39200;
+	}
+    
+    .dropdownTxt {
+		font-size: 50px;
+		font-weight: 500;
+		line-height: 70px;
+	}
+    
+    .categoryDescr {		
+		width: 700px;
+		margin-top: 0rem;
+		padding: 30px 50px 30px 50px;		
+		color: #F39200;
+		border: 5px solid #F39200;
+		border-top: none;
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform .4s cubic-bezier(.23,1,.32,1) .1s;
+	}
+    
+ /*principles*/    
+    .principles {
+		padding-top: 300px;
+		color: #000000;
+	}
+    
+    .icon-principle {
+		height: 200px;
+		width: auto;
+	}
+    
+    .principle-text {
+		margin-top: 10rem;
+		font-size: 50px;
+		line-height: 70px;
+	}
+    
+/*carosello*/   
+    .mostLoved {
+		margin-top: 30rem;
+		padding-bottom: 300px;
+	}
+    
+    .activitiycard {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .textabove {
+        width: 84%;
+        padding-left: 80px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        bottom: 0px;
+        right: 15px;
+        left: 15px;
+     }
+    
+    .textabove p {
+      font-size: 38px;  
+    }
+    
+    .textabove h5 {
+        font-size: 49px;
+        padding-bottom: 10px;
+    }
+    
+ /*footer*/   
+    footer {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    
+    #footer h6 {
+        font-size: 40px;
+    } 
+    
+    #footer p {
+        font-size: 35px;
+    }
+    
+    .newsletter {
+        padding-left: 200px;
+    }
+    
+    #icon-fb, #icon-ig, #icon-twitter {
+        width: auto;
+        height: 70px;
+        margin-top: 30px;
+        margin-right: 3rem;
+    }
+    
+    #enter-email, #subscribe {
+        font-size: 35px;
+    }
+    
+    #enter-email {
+        border: 4px solid white;
+        border-radius: 0;
+        padding: 30px;
+        height: 100px;
+        width: 600px;
+    }
+    
+    #subscribe {
+        font-weight: 500;
+        border: 4px solid white;
+        border-radius: 0;
+        padding: 15px;
+        margin-top: 0.2rem;
+        margin-left: 2rem;
+        height: 100px;
+    }
+     
+}
+
+
+
+/*MEGA SCHERMO CATEGORY----------------------------------------------------------------------------*/
+@media (min-width: 3500px) {
+
+/*category left side*/ 
+    .category-text {
+        margin-top: 18rem;
+        font-size: 60px;
+    }
+    
+    .category-cards {
+        margin-top: 21rem;
+    }
+    
+    .category-title {
+        font-size: 150px;
+        line-height: 12rem;
+        margin-bottom: 80px;
+    }
+    
+    .category-choose {
+        margin-top: 6rem;
+    }
+    
+    .category-choose p{
+        margin-bottom: 3rem;
+    }
+
+    .category-change-btn {
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 4px solid #F39200;
+    }
+    
+/*category right side*/     
+    .margincards {margin-bottom: 100px;}
+    
+    .sticky {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 300px;
+    }
+    
+    .category-all {
+        margin-bottom: 250px;
+    }
+}
+
+
+
+/*MEGA SCHERMO SINGLE TOUR----------------------------------------------------------------------------*/
+@media (min-width: 3500px) {
+        
+/*single page left side*/    
+    
+    .tour-cards {
+        margin-top: 18rem;
+    }
+    
+    .tour-info p {
+	   font-size: 40px;
+    }
+    
+    .tour-info i {
+	   font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .text-description {
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: 3rem;
+    }
+    
+     .text-description h6 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: 3rem;
+	    margin-bottom: 1rem;
+    }
+    
+     .tour-title {
+        font-weight: 800;
+        font-size: 150px;
+        line-height: 12rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    } 
+    
+    #tot-price {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .category-all {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    .menucategory {
+        border: solid 4px #F39200;
+        padding: 5px 15px;
+        width: 20%;
+        font-size: 40px;
+    }
+
+    .menucategory:hover {
+        border: solid 4px #F39200;
+        background-color: #F39200;
+        font-size: 40px;
+    }
+
+
+    .currentcategory {
+        border: solid 4px #F39200;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 40px;
+    }
+    
+    .tag-title {
+        font-size: 40px;
+        margin-bottom: 1rem; 
+    }
+    
+    .bordertop-film {
+        border-top: 12px solid #F39200;
+    }
+
+    .bordertop {	
+        border-top: 12px solid #FFFFFF;
+    }
+    
+    .margincards-singletour {
+        margin-bottom: 50px;
+    }
+    
+/*single page left side*/ 
+    div.text-container {
+        border: solid 4px white;
+        padding: 50px;
+    }
+    
+    .text-container p{
+        font-size: 40px;
+    }
+    
+    .text-container a  {
+        font-size: 40px;
+    }
+    
+    .text-container h5 {
+        font-size: 50px;
+    }
+    
+    .orangep {
+        margin-bottom: 50px;
+    }
+    
+    .hideContent {
+        overflow: hidden;
+        height: 43.7em;   /* 20.4em*/ /* 18.9em*/	
+    }
+    
+     .marginbottom-review {
+        margin-bottom: 10rem;
+    }
+    
+    .freccia {
+        width: 50px;
+        display: block;
+        margin: auto;
+        margin-top: 450px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+}
+
+
+
+/*MEGA SCHERMO ABOUT----------------------------------------------------------------------------*/
+@media (min-width: 3500px) {
+    
+    /*about title*/
+    .category-text-about {
+        margin-top: 30rem;
+    }
+    
+    .category-title-about {
+        font-size: 150px;
+        line-height: 12rem;
+    }
+    
+    .category-subtitle-about {
+        font-size: 80px;
+    }
+    
+    
+    /*about text*/
+    .about-margin-top {
+        margin-top: 30rem;
+    }
+    
+    .about-top-distance {
+        margin-top: 150px;
+    }
+    
+    .textabout-margin-subtitle {
+        margin-top: 100px; 
+    }
+
+    .about-top-distance-section {
+        margin-top: 100px;
+    }
+    
+    .about-distance-protocol {
+        margin-right: 150px;
+    }
+    
+    .carousel-margin-about {
+        margin-top: 100px;
+    }
+    
+    .titleabout {
+        font-size: 3rem;
+        line-height: 60px;
+        padding-top: 18px;
+        font-weight: 600;
+    }
+    
+    .textabout {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    
+    .textabout2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    
+    .textabout3 {
+        font-size: 45px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+    
+    .centeredtextabout3 {
+        top: 90%;
+        left: 30%;
+    }
+    
+    .descriptionabout {
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    
+    
+    /*about footer*/
+    .logo-images {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    #logodensity {
+        margin-right: 6rem;
+        width: 300px;
+    }
+
+    #logopoli {
+        width: 320px;
+    }
+    
+    ul {
+        font-size: 30px;
+        padding-left: 0rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    
+}
+
+
+
+
 
 
 
