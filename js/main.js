@@ -43,19 +43,20 @@ $(document).ready(function(){
                         }
 
                          // Let's check if we are in the homepage or behindthescene!
-                        var pathImgFull="../assets/images/icon-backpack-full.png";
-                        var pathImgEmpty ="../assets/images/icon-backpack.png";
+                        var pathImgFull="assets/images/icon-backpack-full.png";
+                        var pathImgEmpty ="assets/images/icon-backpack.png";
 
-                        if(pageName=="index" || pageName=="behindthescene")
+                        if(pageName!="index" || pageName!="behindthescene")
                                 {
-                                 pathImgFull="assets/images/icon-backpack-full.png";
-                                 pathImgEmpty="assets/images/icon-backpack.png";
+                                 pathImgFull="../assets/images/icon-backpack-full.png";
+                                 pathImgEmpty="../assets/images/icon-backpack.png";
                                 }
 
                          // change icon if cart is filled or empty
                         if(empty== true) 
                             { 
                               $("#icon-backpack").attr('src',pathImgEmpty);
+
                             }
                         else
                           {
@@ -147,18 +148,33 @@ $(document).ready(function(){
 
         // category color change on hover and background image change
                 $(".whiteHover").hover( 
-                        function(){  
-                                     $(".whiteHover").css({"color": "white", "border": "2px solid white" });
-                                     $(".categoryDescr").css("border-top-style", "none");
-                                     $(".categoryLinks").css("color", "white");
+                        
+                        function(){  if (windWidth>=3500) {
+                                                         $(".whiteHover").css({"color": "white", "border": "5px solid white" });
+                                                         $(".categoryLinks").css("color", "white");
+                                                         $(".dropdownTxt").css("color", "white");
+                                                         $(".categoryDescr").css({"border": "5px solid white", "border-top-style": "none"});
+                                                        } 
+                                     else{
+                                        $(".whiteHover").css({"color": "white", "border": "2px solid white" });
+                                        $(".categoryDescr").css("border-top-style", "none");
+                                        $(".categoryLinks").css("color", "white");
+                                        }
                                   },
 
-                        function(){  
-                                     $(".whiteHover").css({"color": "#F39200", "border": "2px solid #F39200"});
-                                     $(".categoryDescr").css("border-top-style", "none");
-                                     $(".categoryLinks").css("color", "#F39200");
+                        function(){  if (windWidth>=3500) {
+                                                         $(".whiteHover").css({"color": "#F39200", "border": "5px solid #F39200" });
+                                                         $(".categoryLinks").css("color", "#F39200");
+                                                         $(".dropdownTxt").css("color", "#F39200");
+                                                         $(".categoryDescr").css({"border": "5px solid #F39200", "border-top-style": "none"});
+                                                        } 
+                                     else{
+                                        $(".whiteHover").css({"color": "#F39200", "border": "2px solid #F39200"});
+                                        $(".categoryDescr").css("border-top-style", "none");
+                                        $(".categoryLinks").css("color", "#F39200");
+                                        }
                                   },                                                                                    
-        ); 
+        );
 
         //this function makes the category image appear on hover                         
                 $("#MAKE").hover(       
@@ -235,6 +251,7 @@ $(document).ready(function(){
                                         $(this).toggleClass("noBottom");
                         }
                 );
+    
         //about--------------------------------------------//
 
                 $("#makeyourpresence").hover(
@@ -275,6 +292,56 @@ $(document).ready(function(){
                             $("#leaveyourmark_hover").css("opacity", "0");
                             }
                 );
+    
+    
+        //svg mobile--------------------------------------------
+
+    $("#makeyourpresence-mobile").hover(
+      function() {
+        $(this).css("opacity", "0");
+        $("#makeyourpresence_hover-mobile").css("opacity", "1");
+      },
+      function() {
+        $(this).css("opacity", "1");
+        $("#makeyourpresence_hover-mobile").css("opacity", "0");
+      }
+    );
+
+    // ----------------------
+    $(" #feeltheadrenalina-mobile").hover(
+      function() {
+        $(this).css("opacity", "0");
+        $("#feeltheadrenalina_hover-mobile").css("opacity", "1");
+      },
+      function() {
+        $(this).css("opacity", "1");
+        $("#feeltheadrenalina_hover-mobile").css("opacity", "0");
+      }
+    );
+
+    // ----------------------
+    $(" #swimagainst-mobile").hover(
+      function() {
+        $(this).css("opacity", "0");
+        $("#swimagainst_hover-mobile").css("opacity", "1");
+      },
+      function() {
+        $(this).css("opacity", "1");
+        $("#swimagainst_hover-mobile").css("opacity", "0");
+      }
+    );
+
+    // ----------------------
+    $(" #leaveyourmark-mobile").hover(
+      function() {
+        $(this).css("opacity", "0");
+        $("#leaveyourmark_hover-mobile").css("opacity", "1");
+      },
+      function() {
+        $(this).css("opacity", "1");
+        $("#leaveyourmark_hover-mobile").css("opacity", "0");
+      }
+    );
         
     
     //Audio
