@@ -43,26 +43,26 @@ $(document).ready(function(){
                         }
 
                          // Let's check if we are in the homepage or behindthescene!
-                        var pathImgFull="../assets/images/icon-backpack-full.png";
-                        var pathImgEmpty ="../assets/images/icon-backpack.png";
+                        var pathImgFull="assets/images/icon-backpack-full.png";
+                        var pathImgEmpty ="assets/images/icon-backpack.png";
 
                        
 
                          // change icon if cart is filled or empty
                         if(empty== true) 
-                            {  if(pageName=="index" || pageName=="behindthescene"|| pageName=="")
+                            {  if(pageName!="index" || pageName!="behindthescene")
                                 {
-                                 pathImgFull="assets/images/icon-backpack-full.png";
-                                 pathImgEmpty="assets/images/icon-backpack.png";
+                                 pathImgFull="../assets/images/icon-backpack-full.png";
+                                 pathImgEmpty="../assets/images/icon-backpack.png";
                                 }
                               $("#icon-backpack").attr('src',pathImgEmpty);
 
                             }
                         else
-                          { if(pageName=="index" || pageName=="behindthescene"|| pageName=="")
+                          { if(pageName!="index" || pageName!="behindthescene")
                                 {
-                                 pathImgFull="assets/images/icon-backpack-full.png";
-                                 pathImgEmpty="assets/images/icon-backpack.png";
+                                 pathImgFull="../assets/images/icon-backpack-full.png";
+                                 pathImgEmpty="../assets/images/icon-backpack.png";
                                 }
                             $("#icon-backpack").attr('src',pathImgFull);
                           }
