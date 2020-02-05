@@ -43,13 +43,13 @@ $(document).ready(function(){
                         }
 
                          // Let's check if we are in the homepage or behindthescene!
-                        var pathImgFull="assets/images/icon-backpack-full.png";
-                        var pathImgEmpty ="assets/images/icon-backpack.png";
+                        var pathImgFull="../assets/images/icon-backpack-full.png";
+                        var pathImgEmpty ="../assets/images/icon-backpack.png";
 
-                        if(pageName!="index" || pageName!="behindthescene")
+                        if(pageName=="index" || pageName=="behindthescene")
                                 {
-                                 pathImgFull="../assets/images/icon-backpack-full.png";
-                                 pathImgEmpty="../assets/images/icon-backpack.png";
+                                 pathImgFull="assets/images/icon-backpack-full.png";
+                                 pathImgEmpty="assets/images/icon-backpack.png";
                                 }
 
                          // change icon if cart is filled or empty
