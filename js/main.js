@@ -46,20 +46,24 @@ $(document).ready(function(){
                         var pathImgFull="../assets/images/icon-backpack-full.png";
                         var pathImgEmpty ="../assets/images/icon-backpack.png";
 
-                        if(pageName=="index" || pageName=="behindthescene")
+                       
+
+                         // change icon if cart is filled or empty
+                        if(empty== true) 
+                            {  if(pageName=="index" || pageName=="behindthescene")
                                 {
                                  pathImgFull="assets/images/icon-backpack-full.png";
                                  pathImgEmpty="assets/images/icon-backpack.png";
                                 }
-
-                         // change icon if cart is filled or empty
-                        if(empty== true) 
-                            { 
                               $("#icon-backpack").attr('src',pathImgEmpty);
 
                             }
                         else
-                          {
+                          { if(pageName=="index" || pageName=="behindthescene")
+                                {
+                                 pathImgFull="assets/images/icon-backpack-full.png";
+                                 pathImgEmpty="assets/images/icon-backpack.png";
+                                }
                             $("#icon-backpack").attr('src',pathImgFull);
                           }
                 }
