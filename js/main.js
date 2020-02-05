@@ -50,7 +50,7 @@ $(document).ready(function(){
 
                          // change icon if cart is filled or empty
                         if(empty== true) 
-                            {  if(pageName=="index" || pageName=="behindthescene")
+                            {  if(pageName=="index" || pageName=="behindthescene"|| pageName=="")
                                 {
                                  pathImgFull="assets/images/icon-backpack-full.png";
                                  pathImgEmpty="assets/images/icon-backpack.png";
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
                             }
                         else
-                          { if(pageName=="index" || pageName=="behindthescene")
+                          { if(pageName=="index" || pageName=="behindthescene"|| pageName=="")
                                 {
                                  pathImgFull="assets/images/icon-backpack-full.png";
                                  pathImgEmpty="assets/images/icon-backpack.png";
