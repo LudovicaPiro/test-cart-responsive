@@ -17,15 +17,13 @@ $(window).scroll(
         
         var listMorals =["01-gohaunt", "01-pizza", "01-hear", "01-bestdo", "01-gotmoves", "01-show", "01-door", "01-knock", "01-godyes", "02-driveyourcart", "02-getwith", "02-wire", "02-stand", "02-onthehunt", "02-thebeach", "03-strip", "03-yoga", "03-getwith", "03-climb", "03-youcan", "03-getsouvenirs", "03-godyes", "04-feelfree", "04-reachtheufo", "04-anything", "04-everybody", "04-climb"];
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        var pageName;
-        var noName;
+        var pageName;        
 
 $(document).ready(function(){   
 
         pageName= location.pathname.substring(location.pathname.lastIndexOf("/")+1);
         pageName= pageName.substring(0,pageName.lastIndexOf("."))
-        console.log(pageName);
-        noName= console.log(pageName);
+        console.log(pageName);       
 
                 CheckCartIcon();
                 FillCart();
@@ -48,7 +46,7 @@ $(document).ready(function(){
                         var pathImgFull="../assets/images/icon-backpack-full.png";
                         var pathImgEmpty ="../assets/images/icon-backpack.png";
 
-                        if(pageName=="index" || pageName=="behindthescene" || pageName==noName)
+                        if(pageName=="index" || pageName=="behindthescene" || pageName==="")
                                 {
                                  pathImgFull="assets/images/icon-backpack-full.png";
                                  pathImgEmpty="assets/images/icon-backpack.png";
